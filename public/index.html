@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rust Web Server</title>
+    <style>
+        :root {
+            --primary: #f77f00;
+            --accent: #003049;
+            --bg: #f8f9fa;
+            --card: #fff;
+            --text: #222;
+            --muted: #666;
+        }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        #container {
+            max-width: 600px;
+            margin: 40px auto 0 auto;
+            background: var(--card);
+            border-radius: 12px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+            padding: 2rem 2.5rem 1.5rem 2.5rem;
+        }
+        h1 {
+            color: var(--primary);
+            text-align: center;
+            margin-top: 0;
+            letter-spacing: 1px;
+        }
+        h2 {
+            color: var(--accent);
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        ul {
+            padding-left: 1.2rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        pre {
+            background: #eee;
+            border-radius: 6px;
+            padding: 0.7em 1em;
+            overflow-x: auto;
+        }
+        code {
+            background: #f3f3f3;
+            border-radius: 4px;
+            padding: 2px 6px;
+            font-size: 1em;
+        }
+        footer {
+            text-align: center;
+            color: var(--muted);
+            margin-top: 2.5rem;
+            font-size: 0.95em;
+            letter-spacing: 0.5px;
+        }
+        @media (max-width: 700px) {
+            #container {
+                padding: 1rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Rust web Server 🦀</h1>
+        <p>This is a simple HTTP server built from scratch in Rust</p>
+        <h2>Features</h2>
+        <ul>
+            <li>Serves static HTML, CSS, and JS</li>
+            <li>Handles HTTP GET requests</li>
+            <li>logs requests paths to the terminal</li>
+        </ul>
+
+        <h2>How to run</h2>
+        <pre><code>cargo run</code></pre>
+        <p>Then open your browser at <code>http://127.0.0.1:7878</code></p>
+        <p>The url will also appear in your terminal</p>
+
+        <h2>Notes</h2>
+        <p>This server is intended for learning purposes and local development. Do not expose it to the open web without adding proper security.</p>
+    </div>
+    <footer>
+        <p>Made with Rust</p>
+    </footer>
+</body>
+</html>
